@@ -1,12 +1,28 @@
+.centrar {
+    width: 800px; margin: 0 auto;
+    border: 5px solid #dc3545;
+}
+
 .color {
-    background-color:crimson;
+    background-color:#dc3545;
 }
 
 .boton {
-    background-color: crimson;
-    color: white;
+    width: 70px;
+    height: 35px;
+    border-radius: 200px;
 }
 
-#tabla {
+.tabla {
     background-color: #1B2631;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.damianT {
+
+}
+
+.damianV {
+
 }

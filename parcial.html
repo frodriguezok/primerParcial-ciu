@@ -3,52 +3,60 @@
     <head>
         <link rel="stylesheet" href="estilosParcial.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <title>Primer Parcial</title>
     </head>
-    <body class="p-3 mb-2 bg-dark text-white">
-        <div class="border">
-            <div class="d-flex bd-highlight color">
-                <div class="p-2 flex-grow-1 bd-highlight"><h3>Tus Series</h3></div>
-                <div class="p-2 bd-highlight"><button class="btn btn-dark">X</button></div>
+    <body>
+        <div class="p-3 mb-2 bg-dark text-white centrar">
+            <div class="d-flex p-2 color">
+                <div class="flex-grow-1"><h3>Tus Series</h3></div>
+                <div><button class="btn btn-dark">X</button></div>
             </div>
             <br>
             <div class="input-group mb-3">
                 <input type="text" class="form-control rounded-pill" placeholder="Que serie esta buscando?">
-                <button type="button" class="boton rounded-pill">Buscar</button>
+                <button type="button" class="btn btn-danger rounded-pill" id="palabra" onclick="buscarSerie()">Buscar</button>
               </div>
-            <table class="table table-bordered text-white" id="tabla">
-                <tr>
-                    <th></th>
-                    <th>Nombre</th>
-                    <th>Temporadas</th>
-                    <th>Temporadas vistas</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Grande pa</td>
-                    <td>5</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Cebollitas</td>
-                    <td>3</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Chiquititas</td>
-                    <td>9</td>
-                    <td>3</td>
-                </tr>
-            </table>
-            <button class="boton rounded-pill btn-lg">+</button>
-            <button class="boton rounded-pill btn-lg">-</button>
+              <div class="container tabla">
+                <div class="row tabla">
+                  <div class="col tabla">Seleccionar</div>
+                  <div class="col tabla">Nombre</div>
+                  <div class="col tabla">Temporada</div>
+                  <div class="col tabla">Temporada vista</div>
+                </div>
+                <div class="row tabla">
+                    <div class="col tabla"><input type="checkbox" name="tilde" value="selecciona" id="c1"></div>
+                    <div class="col tabla">Grande pa</div>
+                    <div class="col tabla damianT">5</div>
+                    <div class="col tabla damianV">1</div>
+                </div>
+                <div class="row tabla">
+                    <div class="col tabla"><input type="checkbox" name="tilde" value="selecciona"></div>
+                    <div class="col tabla">Cebollitas</div>
+                    <div class="col tabla damianT">3</div>
+                    <div class="col tabla damianV">2</div>
+                </div>
+                <div class="row tabla">
+                    <div class="col tabla"><input type="checkbox" name="tilde" value="selecciona" ></div>
+                    <div class="col tabla">Chiquititas</div>
+                    <div class="col tabla damianT">9</div>  
+                    <div class="col tabla damianV">3</div>
+                </div>
+              </div>
+              <br>
+            <div class="d-flex">
+                <div class="p-2 flex-grow-1">
+                    <button class="btn btn-danger boton" onclick="sumarVistas()">+</button>
+                    <button class="btn btn-danger boton" onclick="restarVistas()">-</button>
+                </div>
+
+                <div class="p-2">
+                    <button class="btn btn-danger boton">Nueva</button>
+                    <button class="btn btn-danger boton">Editar</button>
+                </div>
+            </div>
+
         </div>
 
-        <script>
-
-        </script>
+        <script src="jsParcial.js"></script>
     </body>
 </html>
