@@ -17,7 +17,7 @@
                 <input type="text" class="form-control rounded-pill" placeholder="Que serie esta buscando?" id="palabra">
                 <button type="button" class="btn btn-danger rounded-pill" onclick="buscarPalabra()">Buscar</button>
               </div>
-              <table class="table table-bordered text-white tabla">
+              <table class="table table-bordered text-white tabla" id="idTabla">
                 <tr>
                     <th>Seleccionar</th>
                     <th>Nombre</th>
@@ -25,27 +25,27 @@
                     <th>Temporadas vistas</th>
                     <th>% visto</th>
                 </tr>
-                    <tr>
-                        <td><input type="checkbox" name="tilde" value="selecciona" ></td>
-                        <td>Grande pa</td>
-                        <td class="temporada">5</td>
-                        <td class="vistas">1</td>
-                        <td class="porcentaje"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="tilde" value="selecciona" ></td>
-                        <td>Cebollitas</td>
-                        <td class="temporada">3</td>
-                        <td class="vistas">2</td>
-                        <td class="porcentaje"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="tilde" value="selecciona" ></td>
-                        <td>Chiquititas</td>
-                        <td class="temporada">9</td>
-                        <td class="vistas">3</td>
-                        <td class="porcentaje"></td>
-                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="tilde" value="selecciona" ></td>
+                    <td>Grande pa</td>
+                    <td class="temporada">5</td>
+                    <td class="vistas">1</td>
+                    <td class="porcentaje"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="tilde" value="selecciona" ></td>
+                    <td>Cebollitas</td>
+                    <td class="temporada">3</td>
+                    <td class="vistas">2</td>
+                    <td class="porcentaje"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="tilde" value="selecciona" ></td>
+                    <td>Chiquititas</td>
+                    <td class="temporada">9</td>
+                    <td class="vistas">3</td>
+                    <td class="porcentaje"></td>
+                </tr>
             </table>
             <br>
             <div class="d-flex">
@@ -69,12 +69,12 @@
                         </div>
                 <div class="modal-body">
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="unNombre">Nombre:</span>
-                        <input type="text" class="form-control" placeholder="Nombre de serie">
+                        <span class="input-group-text">Nombre:</span>
+                        <input type="text" class="form-control" placeholder="Nombre de serie" id="unNombre">
                 </div>
                 <div class="input-group mb-3">
-                    <span class="input-group-text" id="cantidadTemporadas">Temporadas:</span>
-                    <input type="text" class="form-control" placeholder="Cantidad de temporadas">
+                    <span class="input-group-text" >Temporadas:</span>
+                    <input type="text" class="form-control" placeholder="Cantidad de temporadas" id="cantidadTemporadas">
                 </div>
 
                 </div>
