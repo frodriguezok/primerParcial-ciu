@@ -151,5 +151,3 @@ function actualizarPorcentaje() {
 }
 
 actualizarPorcentaje();
-
-
