@@ -1,6 +1,6 @@
 .centrar {
     width: 800px; margin: 0 auto;
-    border: 5px solid #dc3545;
+    /*border: 5px solid #dc3545;*/
 }
 
 .color {
@@ -17,12 +17,4 @@
     background-color: #1B2631;
     border: 1px solid white;
     text-align: center;
-}
-
-.damianT {
-
-}
-
-.damianV {
-
 }
