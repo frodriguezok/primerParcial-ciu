@@ -12,8 +12,8 @@ function sumarVistas() {
             let cantidadTemporadas = document.getElementsByClassName("temporada")
             let vistasValor = vistas[i].innerHTML
             let temporadasValor = cantidadTemporadas[i].innerHTML
-            if (vistasValor < temporadasValor) {
-                vistasValor = parseInt(vistasValor) + parseInt(1)
+            if (vistasValor < parseInt(temporadasValor)) {
+                vistasValor = parseInt(vistasValor) + 1
                 vistas[i].innerHTML = vistasValor
                 actualizarPorcentaje()
             }
@@ -30,7 +30,7 @@ function restarVistas() {
             let cantidadTemporadas = document.getElementsByClassName("temporada")
             let vistasValor = vistas[i].innerHTML
             if (vistasValor > 0) {
-                vistasValor = parseInt(vistasValor) - parseInt(1)
+                vistasValor = parseInt(vistasValor) - 1
                 vistas[i].innerHTML = vistasValor
                 actualizarPorcentaje()
             }
