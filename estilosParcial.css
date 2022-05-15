@@ -1,6 +1,5 @@
 .centrar {
     width: 800px; margin: 0 auto;
-    /*border: 5px solid #dc3545;*/
 }
 
 .color {
@@ -8,7 +7,7 @@
 }
 
 .boton {
-    width: 70px;
+    width: 80px;
     height: 35px;
     border-radius: 200px;
 }

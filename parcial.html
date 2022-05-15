@@ -27,21 +27,21 @@
                 </tr>
                 <tr>
                     <td><input type="checkbox" name="tilde" value="selecciona" ></td>
-                    <td>Grande pa</td>
+                    <td class="nombreDeSerie">Grande pa</td>
                     <td class="temporada">5</td>
                     <td class="vistas">1</td>
                     <td class="porcentaje"></td>
                 </tr>
                 <tr>
                     <td><input type="checkbox" name="tilde" value="selecciona" ></td>
-                    <td>Cebollitas</td>
+                    <td class="nombreDeSerie">Cebollitas</td>
                     <td class="temporada">3</td>
                     <td class="vistas">2</td>
                     <td class="porcentaje"></td>
                 </tr>
                 <tr>
                     <td><input type="checkbox" name="tilde" value="selecciona" ></td>
-                    <td>Chiquititas</td>
+                    <td class="nombreDeSerie">Chiquititas</td>
                     <td class="temporada">9</td>
                     <td class="vistas">3</td>
                     <td class="porcentaje"></td>
@@ -74,7 +74,7 @@
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text" >Temporadas:</span>
-                    <input type="text" class="form-control" placeholder="Cantidad de temporadas" id="cantidadTemporadas">
+                    <input type="text" class="form-control" placeholder="Cantidad de temporadas de la serie" id="cantidadTemporadas" onkeypress="return validador(event);">
                 </div>
 
                 </div>
@@ -96,20 +96,20 @@
                 <div class="modal-body">
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1">Nombre:</span>
-                        <input type="text" class="form-control" placeholder="Nombre de serie">
+                        <input type="text" class="form-control" placeholder="Nombre de serie" id="serieEditar">
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1">Temporadas:</span>
-                    <input type="text" class="form-control" placeholder="Cantidad de temporadas">
+                    <input type="text" class="form-control" placeholder="Cantidad de temporadas de la serie" id="temporadasEditar" onkeypress="return validador(event);">
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1">Vistas:</span>
-                    <input type="text" class="form-control" placeholder="Cantidad de temporadas">
+                    <input type="text" class="form-control" placeholder="Cantidad de temporadas vistas" id="vistasEditar" onkeypress="return validador(event);">
                 </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger boton" data-bs-dismiss="modal">Editar</button>
-                    <button type="button" class="btn btn-danger boton">Cancelar</button>
+                    <button type="button" class="btn btn-danger boton" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger boton" onclick="editarSerie()">Editar</button>
                 </div>
               </div>
              </div>
